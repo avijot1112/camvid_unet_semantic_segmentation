@@ -18,6 +18,7 @@ One of the simpliest models for semantic segmentation is the U-Net. This network
 
 ## 2. Use cases-
    Biomedical Image Segmentation
+   
    Autonomous Driving
 
 ## 3. Dataset

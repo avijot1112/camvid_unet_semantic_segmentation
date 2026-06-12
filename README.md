@@ -19,7 +19,7 @@ Some of the useful papers and links I referred to include:
 
 ## 1. Semantic segmentation using U-Net
 
-The goal of semantic segmentation is to assign a label to every pixel in a image. It differs from object detection, which tries to find a bounding box for each of the detected object, and instance segmentation, which tries to assign both the semantic class and the specific object instance to each pixel. The class labels can either be binary ("doesn this pixel belong to the class or not") or multiclass ("which class does this label belongs to"). For this project I focused on multiclass semantic segmentation.
+The goal of semantic segmentation is to assign a label to every pixel in a image. It differs from object detection, which tries to find a bounding box for each of the detected object, and instance segmentation, which tries to assign both the semantic class and the specific object instance to each pixel. The class labels can either be binary or multiclass . For this project I focused on multiclass semantic segmentation.
 
 One of the simpliest models for semantic segmentation is the U-Net. This network basically consists of a symmetric fully convolutional encoder-decoder network with skip connections between each encoder-decoder stage. It was originally created for segmenting biomedical images but has been applied to many other areas (probably because how easy it can be implemented). The model is trained to reproduce the given segmented masks using the input images.
 

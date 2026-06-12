@@ -103,6 +103,6 @@ Finally, I've read about arguments for or against using different metrics -- whe
 Here are some of the ideas for improving the model I've either thought about, read about but haven't tried, or something I've tried but didn't work out:
 
 1. Use data augmentation. This was emphasized in the original U-Net paper as they had a very limited dataset for training their model. I thought this was going to be a easy thing to do but it turned out to be quite difficult using the augmentation functions in `tf.keras`.
-2. Add more training data, such as the Cityscapes dataset which is a significantly bigger dataset than CamVid. From my experience add more data almost always help improving the performance of a model.
+2. Add more training data.
 3. Add a Conditional Random Fields module (such as a CRF-RNN layer) after the neural network model. This was used in the first version of DeepLab. I found [this implementation of CRF-RNN for the original keras](https://github.com/sadeepj/crfasrnn_keras) but I couldn't get it to work with tensorflow 2. That author does have an alternative implementation for pytorch which has a lot better documentation than the keras version.
 4. (Obviously) try other algorithms.
